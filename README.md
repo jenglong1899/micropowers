@@ -2,14 +2,14 @@
 
 [中文版本](./README_zh.md)
 
-This skill collection is not designed for producing code quickly. It is designed for code quality. The reality have taught me that the AI-generated code must be reviewed carefully.
+This skill collection is not designed for producing code quickly. It is designed for code quality. Reality has taught me that AI-generated code must be reviewed carefully.
 
-- `AGENTS.md` (placed under `~/.codex`): contains the memory mechanism. You must read this before using it, because it is still semi-manual for now.
+- `AGENTS.md` (placed under `~/.codex`): contains the memory mechanism. Codex already has a memory mechanism, so why use this one? I have looked at the memory under the `.codex` directory, and I am not very satisfied with it. You must read this document before using it, because it is still semi-manual for now.
   - You should maintain project memory in the root-level `AGENTS.md`, such as the rough architecture of the project. Do not skip this. Write down the architecture yourself first, then let AI help fill in the rest.
   - Then add the following text at the beginning of the root-level `AGENTS.md`:
   - ```This document is a summary of the codebase intended to help the agent build an understanding of it. It does not mean the agent can skip reading the actual code files referenced by the summary, because an agent may not know what it does not know. For example, when implementing a feature, it may add a fallback without realizing the existing codebase already has one, simply because it did not read enough of the code, leading to duplicated logic.```
-- `plan-coding`: more usable than Codex's built-in planning mode.
 - `incremental-coding`: write no more than 100 lines of code at a time. This fits human nature better; if AI outputs 400-500 lines at once, humans usually will not want to review it carefully.
+- ~~`plan-coding`: more usable than Codex's built-in planning mode.~~ I do not know what happened with GPT-5, but it feels dumber: it spent time making a plan, then later implemented something different. I wrote a new `simple-plan-coding` skill: first let AI write a simple plan that can basically be reviewed in one minute, then use `incremental-coding` afterward and correct it while coding.
 
 ## Acknowledgements
 
