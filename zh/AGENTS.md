@@ -11,7 +11,7 @@
 
 - 你必须说简体中文，代码注释也用简体中文写
 
-- 对于python项目，要用uv而不是python命令，因为我们都是用uv来管理包的。比如你运行测试时，就要用`uv run pytest -q`。
+- 对于python项目，要用uv而不是python命令，因为我们都是用uv来管理包的。比如你运行测试时，就要用`uv run pytest -q --tb=line`。
 
 - 如果你遇到了permission denied之类的问题，比如 error: failed to open file `~/.cache/uv/sdists-v9/.git`: Operation not permitted (os error 1)，直接向用户申请权限就行，而不是尝试找另外一种方法，不然会很浪费时间。
 
