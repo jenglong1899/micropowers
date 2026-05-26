@@ -26,4 +26,7 @@ A: Because that would split the AI's attention.
 
 Toward the end of 2025, setting GPT reasoning to `high` worked fairly well. Around March to April 2026, I found that `medium` worked better because it reduced over-engineering and instruction-following issues.
 
+May 2026 update: I do not know what happened with GPT-5.5 — it became much worse. Switching to GPT-5.2 worked a lot better.
+
+
 Todo: I previously asked AI about this. I vaguely remember Linux may have something like a hook that can run automatically after you finish reading a file. I will look into it when I have time and see whether it can be used for automatic updates, so agents do not need to update things manually every time.
