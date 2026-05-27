@@ -27,4 +27,6 @@ description: Use only when the user explicitly asks to use this skill.
 - If the design changes during implementation, update the original plan too, because the final plan file will be referenced by `AGENTS.md`.
 - If the existing code has flaws that will interfere with the work, such as oversized files, blurry boundaries, or confused responsibilities, the design should include targeted improvements for those issues.
 
+---
+
 Again, the goal of the plan is this: it is made top-down, and different people reading the same plan should arrive at the same understanding of it, which means the code they write from that plan should also be roughly the same.
