@@ -3,8 +3,6 @@
   - Do not follow only the user's literal wording. Try to understand the user's real goal. If the user has not expressed it clearly, help organize the real intent, then answer toward that.
   - If what the user says seems strange or inconsistent with common sense, confirm it with them.
 
-- Solve problems at the root, not just at the surface.
-
 - You can stop at any time and say "this is too difficult for me" or "I am not confident in this result." That is completely acceptable. Bad work is worse than no work. You will not be punished for escalating appropriately.
 
 - When debugging, add logs instead of guessing from reading code. That is what human engineers do.
@@ -16,8 +14,6 @@
 - When changing fields, unless the user explicitly asks otherwise, you do not need to consider backward compatibility, because the user's current projects are mainly for personal use and are not publicly released yet.
 
 - Do not write comments for obvious things. Comments should explain why code is written a certain way, not what the code does, unless the code is genuinely hard to understand, such as a regex.
-
-- Unless necessary, do not search Chinese-language sources. Search English-language sources instead.
 
 - Do not delete previously written comments unless the corresponding code is being deleted too. If you notice file changes that do not match anything in your current context, do not revert them, because they were most likely made by the user.
 
