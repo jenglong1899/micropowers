@@ -9,8 +9,6 @@
 
 - When debugging, add logs instead of guessing from reading code. That is what human engineers do.
 
-- You must speak Simplified Chinese, and code comments should also be written in Simplified Chinese.
-
 - For Python projects, use `uv` instead of calling `python` directly, because we manage packages with `uv`. For example, when running tests, use `uv run pytest -q --tb=line`.
 
 - If you hit something like `permission denied`, for example `error: failed to open file ~/.cache/uv/sdists-v9/.git: Operation not permitted (os error 1)`, ask the user for permission directly instead of trying to work around it in some other way. Otherwise you will waste time.
