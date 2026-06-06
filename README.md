@@ -1,5 +1,7 @@
 # micropowers
 
+[中文版本](README_zh.md)
+
 This project is **not** designed for producing code quickly. It is designed for code quality. Reality has taught me again and again that AI-written code must be reviewed carefully.
 
 This project is designed specifically for GPT-5.4 (GPT-5.5 is dump and expensive). I have not tested it with other models.
