@@ -9,8 +9,6 @@
 
 - When debugging, add logs instead of guessing from reading code. That is what human engineers do.
 
-- You must speak Simplified Chinese, and code comments must also be written in Simplified Chinese.
-
 - For Python projects, use `uv` instead of calling `python` directly, because we manage packages with `uv`. For example, when running tests, use `uv run pytest -q --tb=line`.
 
 - If you hit something like `permission denied`, for example `error: failed to open file ~/.cache/uv/sdists-v9/.git: Operation not permitted (os error 1)`, ask the user for permission directly instead of trying to work around it in some other way. Otherwise you will waste time.
@@ -19,15 +17,13 @@
 
 - Do not write comments for obvious things. Comments should explain why code is written a certain way, not what the code does, unless the code is genuinely hard to understand, such as a regex.
 
-- Unless necessary, do not search for Chinese-language sources. Search English-language sources instead.
-
 - Do not delete previously written comments unless the corresponding code is being deleted too. If you notice file changes that do not match anything in your current context, do not revert them, because they were most likely made by the user.
 
 - If you need to delete a file, do not use `apply_patch`, because it requires entering the file's full content and wastes tokens. Use `rm` instead. Similarly, if you need to copy one file's content over another file, do not use `apply_patch`; you can use `cp`.
 
 <code_quality>
 
-- Principle of least surprise, including but not limited to function signatures and variable names
+- Principle of least surprise (including function signatures and variable names)
 - YAGNI
 - SOLID
 - DRY
@@ -40,6 +36,6 @@
 
 **Strive to implement features with the least amount of business code.**
 
-**Before adding an abstraction or code, ask whether it is really necessary.**
+**Before adding an abstraction or code, ask yourself whether it is really necessary.**
 
 </code_quality>
