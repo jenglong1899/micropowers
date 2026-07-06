@@ -39,3 +39,5 @@
 **Before adding an abstraction or code, ask yourself whether it is really necessary.**
 
 </code_quality>
+
+When you notice that more than 50% of the current context is just useless intermediate process, or when the user says to reset context, go read `~/.codex/memory-instruction.md`.
