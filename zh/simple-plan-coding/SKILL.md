@@ -1,6 +1,6 @@
 ---
 name: simple-plan-coding
-description: 对编程任务做计划时使用
+description: 当用户明确说明使用这个 skill 的时候才使用。
 ---
 
 ## 步骤
