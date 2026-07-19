@@ -1,6 +1,6 @@
 ---
 name: coding-like-a-human
-description: 要实施一个改动会超过100行的改动时使用。
+description: 添加、修改一个功能时使用。例外：如果这个修改的diff不超过50行，就不需要用。
 ---
 
 **目标：让用户用最低的理解成本确认方案。**
